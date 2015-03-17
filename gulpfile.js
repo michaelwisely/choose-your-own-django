@@ -24,14 +24,11 @@ gulp.task('default', function() {
     // Standalone
     opts.args.push('-s');
 
+    // Use Markdown
+    opts.args.push('--from=markdown+yaml_metadata_block+inline_code_attributes');
+
     // Use reveal.js
     opts.args.push('--to=revealjs');
-
-    // Set revealjs location
-    opts.args.push("--variable=revealjs-url:http://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.0.0")
-
-    // Set theme
-    opts.args.push("--variable=theme:script")
 
     var magic = function(file, opts, cb) {
         return cb(file, opts);
