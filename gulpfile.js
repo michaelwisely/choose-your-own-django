@@ -29,6 +29,7 @@ gulp.task('default', function() {
 
     // Use reveal.js
     opts.args.push('--to=revealjs');
+    opts.args.push('--template=' + path.join(__dirname, './lib/default.revealjs'));
 
     var magic = function(file, opts, cb) {
         return cb(file, opts);
