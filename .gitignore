@@ -1,0 +1,10 @@
+# Node dependencies
+node_modules/
+
+# Editor temps
+*~
+.#*
+\#*
+
+# Built files
+dist/
