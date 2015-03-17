@@ -31,6 +31,9 @@ gulp.task('default', function() {
     opts.args.push('--to=revealjs');
     opts.args.push('--template=' + path.join(__dirname, './lib/default.revealjs'));
 
+    // Slide Level
+    opts.args.push('--slide-level=2');
+
     var magic = function(file, opts, cb) {
         return cb(file, opts);
     };
